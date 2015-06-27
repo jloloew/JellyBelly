@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+use_frameworks!
+
+target 'JellyBelly' do
+	pod 'Alamofire', '~> 1.2'
+	pod 'SwiftyJSON', '~> 2.2'
+end
+
+target 'JellyBellyTests' do
+
+end
+
