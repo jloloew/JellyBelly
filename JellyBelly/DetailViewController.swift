@@ -44,12 +44,11 @@ class DetailViewController: UIViewController {
 		scrollView.contentInset = UIEdgeInsetsZero
 		scrollView.scrollIndicatorInsets = UIEdgeInsetsZero
 	}
-
-
+	
 	var chef: Chef? {
 		didSet {
-		    // Update the view.
-		    self.configureView()
+			// Update the view.
+			self.configureView()
 			// start listening for changes
 			let nc = NSNotificationCenter.defaultCenter()
 			if let _ = chefNCObserver {
@@ -83,18 +82,12 @@ class DetailViewController: UIViewController {
 			percentageRating = chef.rating
 		}
 	}
-
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		self.configureView()
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-
-
+	
 }
 

@@ -6,6 +6,7 @@ use_frameworks!
 target 'JellyBelly' do
 	pod 'Alamofire', '~> 1.2'
 	pod 'SwiftyJSON', '~> 2.2'
+	pod 'Braintree'
 end
 
 target 'JellyBellyTests' do
