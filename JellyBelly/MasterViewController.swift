@@ -34,6 +34,17 @@ class MasterViewController: UITableViewController {
 		}
 	}
 	
+	@IBAction func didPullToRefresh(sender: AnyObject) {
+		dataSource.refresh { (error) -> Void in
+			if error == nil {
+				self.tableView.reloadData()
+			}
+			if let sender = sender as? UIRefreshControl {
+				sender.endRefreshing()
+			}
+		}
+	}
+	
 	// MARK: - Segues
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

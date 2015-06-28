@@ -14,29 +14,17 @@ let ChefDidUpdateNotificationKey = "ChefDidUpdateNotificationKey"
 
 class Chef: NSObject {
 	
-	var id = -1
+	var id: String!
 	var name: String!
 	var profileImage: UIImage!
 	var backgroundImage: UIImage!
+	var bio: String!
 	var locationCoordinates: [String : Double]!
-//	var locationCoordinates: CLLocationCoordinate2D { // use KVC to store this property
-//		get {
-//			let latLon = self.valueForKey("locationCoordinates") as! [String : Double]
-//			let lat = latLon["latitude"]!//.doubleValue
-//			let lon = latLon["longitude"]!//.doubleValue
-//			return CLLocationCoordinate2D(latitude: lat, longitude: lon)
-//		}
-//		set {
-//			let dict = [
-//				"latitude": newValue.latitude,
-//				"longitude": newValue.longitude
-//			]
-//			self.setValue(dict, forKey: "locationCoordinates")
-//		}
-//	}
 	var locationDescription: String!
 	var locationType: String!
+	var rating: Double!
 	var recipes = [Recipe]()
+	
 	/// The distance from the device's current location to the chef.
 	var distance: String {
 		return "1.2 mi"
@@ -52,6 +40,8 @@ class Chef: NSObject {
 	
 	override func setValue(value: AnyObject?, forKey key: String) {
 		switch key {
+		case "rating":
+			rating = (value as! NSNumber).doubleValue
 		case "profileImage":
 			// crop to a circle
 			if let avalue = value as? UIImage {

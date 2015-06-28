@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let appearance = UINavigationBar.appearance()
 		appearance.tintColor = secondary
 		appearance.barTintColor = primary
-		appearance.titleTextAttributes = [NSForegroundColorAttributeName : secondary]
+//		appearance.titleTextAttributes = [NSForegroundColorAttributeName : secondary]
 		
 		return true
 	}

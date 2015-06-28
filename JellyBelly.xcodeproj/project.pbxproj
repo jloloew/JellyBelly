@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		23B339DA14FF52F09BE69CF4 /* Pods_JellyBelly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AC428516838A7813DE4516 /* Pods_JellyBelly.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B842A0D31B3F8D3C00378100 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842A0D21B3F8D3C00378100 /* ProfilePictureView.swift */; };
-		B842A0D51B3F8D8100378100 /* ProfilePictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B842A0D41B3F8D8100378100 /* ProfilePictureView.xib */; };
 		B85845001B3F91C300300A89 /* JLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85844FF1B3F91C300300A89 /* JLUtils.swift */; };
 		B85845031B3F9CAB00300A89 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = B85845011B3F9CAB00300A89 /* pizza.png */; };
 		B85845041B3F9CAB00300A89 /* ryan.png in Resources */ = {isa = PBXBuildFile; fileRef = B85845021B3F9CAB00300A89 /* ryan.png */; };
@@ -24,7 +22,6 @@
 		B8B70CD91B3F2448006093F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B70CD81B3F2448006093F1 /* MapKit.framework */; };
 		B8B70CDB1B3F2701006093F1 /* ChefCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDA1B3F2701006093F1 /* ChefCellTableViewCell.swift */; };
 		B8B70CDD1B3F2E18006093F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDC1B3F2E18006093F1 /* DataSource.swift */; };
-		B8B70CDF1B3F2E67006093F1 /* DummyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDE1B3F2E67006093F1 /* DummyDataSource.swift */; };
 		B8B70CE11B3F4698006093F1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CE01B3F4698006093F1 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +39,6 @@
 		100D62063EE7F3C93FCA63CB /* Pods-JellyBelly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyBelly.release.xcconfig"; path = "Pods/Target Support Files/Pods-JellyBelly/Pods-JellyBelly.release.xcconfig"; sourceTree = "<group>"; };
 		39220652FC39AE2C32A409C7 /* Pods-JellyBelly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyBelly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JellyBelly/Pods-JellyBelly.debug.xcconfig"; sourceTree = "<group>"; };
 		67AC428516838A7813DE4516 /* Pods_JellyBelly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyBelly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B842A0D21B3F8D3C00378100 /* ProfilePictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
-		B842A0D41B3F8D8100378100 /* ProfilePictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePictureView.xib; sourceTree = "<group>"; };
 		B85844FF1B3F91C300300A89 /* JLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLUtils.swift; sourceTree = "<group>"; };
 		B85845011B3F9CAB00300A89 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
 		B85845021B3F9CAB00300A89 /* ryan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ryan.png; sourceTree = "<group>"; };
@@ -62,7 +57,6 @@
 		B8B70CD81B3F2448006093F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B8B70CDA1B3F2701006093F1 /* ChefCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefCellTableViewCell.swift; sourceTree = "<group>"; };
 		B8B70CDC1B3F2E18006093F1 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		B8B70CDE1B3F2E67006093F1 /* DummyDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDataSource.swift; sourceTree = "<group>"; };
 		B8B70CE01B3F4698006093F1 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,12 +127,9 @@
 				B8B70CDC1B3F2E18006093F1 /* DataSource.swift */,
 				B85844FF1B3F91C300300A89 /* JLUtils.swift */,
 				B8B70CB41B3F1705006093F1 /* DetailViewController.swift */,
-				B8B70CDE1B3F2E67006093F1 /* DummyDataSource.swift */,
 				B8B70CB21B3F1705006093F1 /* MasterViewController.swift */,
-				B842A0D21B3F8D3C00378100 /* ProfilePictureView.swift */,
 				B8B70CE01B3F4698006093F1 /* Recipe.swift */,
 				B8B70CB91B3F1705006093F1 /* Images.xcassets */,
-				B842A0D41B3F8D8100378100 /* ProfilePictureView.xib */,
 				B8B70CBB1B3F1705006093F1 /* LaunchScreen.xib */,
 				B8B70CB61B3F1705006093F1 /* Main.storyboard */,
 				B8B70CAE1B3F1705006093F1 /* Supporting Files */,
@@ -259,7 +250,6 @@
 				B85845031B3F9CAB00300A89 /* pizza.png in Resources */,
 				B8B70CB81B3F1705006093F1 /* Main.storyboard in Resources */,
 				B8B70CBD1B3F1705006093F1 /* LaunchScreen.xib in Resources */,
-				B842A0D51B3F8D8100378100 /* ProfilePictureView.xib in Resources */,
 				B8B70CBA1B3F1705006093F1 /* Images.xcassets in Resources */,
 				B85845041B3F9CAB00300A89 /* ryan.png in Resources */,
 			);
@@ -328,13 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B70CDD1B3F2E18006093F1 /* DataSource.swift in Sources */,
-				B8B70CDF1B3F2E67006093F1 /* DummyDataSource.swift in Sources */,
 				B8B70CDB1B3F2701006093F1 /* ChefCellTableViewCell.swift in Sources */,
 				B8B70CB51B3F1705006093F1 /* DetailViewController.swift in Sources */,
 				B8B70CB31B3F1705006093F1 /* MasterViewController.swift in Sources */,
 				B85845001B3F91C300300A89 /* JLUtils.swift in Sources */,
 				B8B70CB11B3F1705006093F1 /* AppDelegate.swift in Sources */,
-				B842A0D31B3F8D3C00378100 /* ProfilePictureView.swift in Sources */,
 				B8B70CD71B3F1989006093F1 /* Chef.swift in Sources */,
 				B8B70CE11B3F4698006093F1 /* Recipe.swift in Sources */,
 			);
