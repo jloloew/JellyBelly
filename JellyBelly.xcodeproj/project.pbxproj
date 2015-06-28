@@ -23,6 +23,7 @@
 		B8B70CD91B3F2448006093F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B70CD81B3F2448006093F1 /* MapKit.framework */; };
 		B8B70CDD1B3F2E18006093F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDC1B3F2E18006093F1 /* DataSource.swift */; };
 		B8B70CE11B3F4698006093F1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CE01B3F4698006093F1 /* Recipe.swift */; };
+		B8F7FE471B402F9300DC18E1 /* spaghetti.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F7FE461B402F9300DC18E1 /* spaghetti.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B8B70CD81B3F2448006093F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B8B70CDC1B3F2E18006093F1 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B8B70CE01B3F4698006093F1 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		B8F7FE461B402F9300DC18E1 /* spaghetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaghetti.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		B8B70CAE1B3F1705006093F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8F7FE461B402F9300DC18E1 /* spaghetti.png */,
 				B85845011B3F9CAB00300A89 /* pizza.png */,
 				B85845021B3F9CAB00300A89 /* ryan.png */,
 				B8B70CAF1B3F1705006093F1 /* Info.plist */,
@@ -250,6 +253,7 @@
 				B85845031B3F9CAB00300A89 /* pizza.png in Resources */,
 				B8B70CB81B3F1705006093F1 /* Main.storyboard in Resources */,
 				B8B70CBD1B3F1705006093F1 /* LaunchScreen.xib in Resources */,
+				B8F7FE471B402F9300DC18E1 /* spaghetti.png in Resources */,
 				B8B70CBA1B3F1705006093F1 /* Images.xcassets in Resources */,
 				B85845041B3F9CAB00300A89 /* ryan.png in Resources */,
 			);

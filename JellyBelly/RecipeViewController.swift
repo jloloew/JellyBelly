@@ -57,6 +57,10 @@ class RecipeViewController: UIViewController, BTDropInViewControllerDelegate {
 				println("Successfully sent payment.")
 				let dataStr = NSString(data: data!, encoding: NSUTF8StringEncoding)! as String
 				println("Received data \(dataStr)")
+				// tell the user it succeeded
+				let alert = UIAlertController(title: "Payment Successful", message: "You just lost $10, sucka!", preferredStyle: .Alert)
+				alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+				self.presentViewController(alert, animated: true, completion: nil)
 			}
 		}
 	}
