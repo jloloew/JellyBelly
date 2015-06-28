@@ -20,22 +20,21 @@ class MasterViewController: UITableViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
-		self.navigationItem.leftBarButtonItem = self.editButtonItem()
 		
-//		let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-//		self.navigationItem.rightBarButtonItem = addButton
-		
-		dataSource.refresh()
+		dataSource.refresh { (error) -> Void in
+			if error == nil {
+				self.tableView.reloadData()
+			}
+		}
 	}
 	
 	// MARK: - Segues
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if segue.identifier == "showDetail" {
+		if segue.identifier == "showChef" {
 			if let indexPath = self.tableView.indexPathForSelectedRow() {
-				let object = allChefs[indexPath.row]
-				(segue.destinationViewController as! DetailViewController).detailItem = object
+				let chef = allChefs[indexPath.row]
+				(segue.destinationViewController as! DetailViewController).chef = chef
 			}
 		}
 	}
@@ -52,9 +51,19 @@ class MasterViewController: UITableViewController {
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCellWithIdentifier("ChefCell", forIndexPath: indexPath) as! UITableViewCell
-		
+		// configure the cell
 		let chef = allChefs[indexPath.row]
 		cell.textLabel!.text = chef.name
+		cell.detailTextLabel!.text = chef.distance
+//		cell.imageView!.image = chef.profileImage
+//		cell.imageView!.layer.cornerRadius = cell.imageView!.bounds.height / 2
+//		cell.imageView!.layer.masksToBounds = true
+//		let maskView = UIView(frame: cell.imageView!.frame)
+//		maskView.layer.cornerRadius = maskView.frame.height / 2
+//		maskView.backgroundColor = UIColor.whiteColor()
+//		maskView.clipsToBounds = true
+//		cell.imageView!.maskView = maskView
+		
 		return cell
 	}
 	
