@@ -16,17 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// set app-wide color scheme
-		let primary = UIColor(red: 0xFD / 255.0, green: 0x50 / 255.0, blue: 0x45 / 255.0, alpha: 1.0)
-		let secondary = UIColor.whiteColor()
-		application.statusBarStyle = .LightContent
+//		let primary = UIColor(red: 0xFD / 255.0, green: 0x50 / 255.0, blue: 0x45 / 255.0, alpha: 1.0) // strawberry
+		let primary = UIColor(red: 0xA6 / 255.0, green: 0xC1 / 255.0, blue: 0x57 / 255.0, alpha: 1.0) // kiwi
+		let secondary = UIColor.darkTextColor()
+//		application.statusBarStyle = .LightContent
 		let appearance = UINavigationBar.appearance()
 		appearance.tintColor = secondary
 		appearance.barTintColor = primary
-		appearance.titleTextAttributes = [
-			NSForegroundColorAttributeName : secondary
-//			NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
-//			NSObliquenessAttributeName : 0.5
-		]
+		appearance.titleTextAttributes = [NSForegroundColorAttributeName : secondary]
 		
 		return true
 	}

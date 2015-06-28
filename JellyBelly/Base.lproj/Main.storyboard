@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -87,22 +88,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-o9-iLF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="430"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-o9-iLF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="605"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-GA-m1U">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="430"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-6I-A6G">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n4D-6I-A6G" secondAttribute="height" multiplier="375:175" id="CiT-Nn-vW1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8o-TQ-UJu">
+                                        <rect key="frame" x="117.5" y="105" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="o8o-TQ-UJu" secondAttribute="height" multiplier="1:1" id="YR4-U0-omR"/>
+                                            <constraint firstAttribute="width" constant="140" id="nb5-4o-X45"/>
+                                        </constraints>
+                                    </imageView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-GA-m1U">
+                                        <rect key="frame" x="0.0" y="175" width="375" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yt5-GA-m1U" secondAttribute="height" multiplier="375:250" id="bR4-wG-ZVC"/>
+                                        </constraints>
                                     </mapView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-6I-A6G">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ryan.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8o-TQ-UJu">
-                                        <rect key="frame" x="114" y="103" width="134" height="128"/>
-                                    </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yt5-GA-m1U" firstAttribute="leading" secondItem="EDM-o9-iLF" secondAttribute="leading" id="2Xx-7n-75T"/>
+                                    <constraint firstAttribute="height" constant="605" id="45G-I3-lcG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yt5-GA-m1U" secondAttribute="bottom" id="80u-lf-IZi"/>
+                                    <constraint firstItem="Yt5-GA-m1U" firstAttribute="top" secondItem="EDM-o9-iLF" secondAttribute="top" id="9gV-6t-9qd"/>
+                                    <constraint firstItem="Yt5-GA-m1U" firstAttribute="width" secondItem="EDM-o9-iLF" secondAttribute="width" id="Guu-jE-HCC"/>
+                                    <constraint firstItem="o8o-TQ-UJu" firstAttribute="top" secondItem="n4D-6I-A6G" secondAttribute="bottom" constant="-70" id="NFM-rl-eu5"/>
+                                    <constraint firstItem="n4D-6I-A6G" firstAttribute="top" secondItem="EDM-o9-iLF" secondAttribute="top" id="Whz-VR-qtl"/>
+                                    <constraint firstAttribute="centerX" secondItem="o8o-TQ-UJu" secondAttribute="centerX" id="eva-zC-Q16"/>
+                                    <constraint firstItem="n4D-6I-A6G" firstAttribute="width" secondItem="EDM-o9-iLF" secondAttribute="width" id="lvg-5Z-vqE"/>
+                                    <constraint firstItem="n4D-6I-A6G" firstAttribute="leading" secondItem="EDM-o9-iLF" secondAttribute="leading" id="mpx-Uw-KPE"/>
+                                    <constraint firstItem="Yt5-GA-m1U" firstAttribute="top" secondItem="n4D-6I-A6G" secondAttribute="bottom" id="mrs-EI-Uz8"/>
+                                    <constraint firstAttribute="centerX" secondItem="n4D-6I-A6G" secondAttribute="centerX" id="vc5-mZ-wBf"/>
+                                    <constraint firstAttribute="trailing" secondItem="n4D-6I-A6G" secondAttribute="trailing" id="wuj-ae-OWl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yt5-GA-m1U" secondAttribute="trailing" id="xGH-WA-ong"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vc5-mZ-wBf"/>
+                                        <exclude reference="wuj-ae-OWl"/>
+                                        <exclude reference="9gV-6t-9qd"/>
+                                        <exclude reference="xGH-WA-ong"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EDM-o9-iLF" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" id="9Ya-Ld-zBI"/>
+                            <constraint firstItem="hZf-DY-dax" firstAttribute="top" secondItem="EDM-o9-iLF" secondAttribute="bottom" constant="173" id="IpP-Q9-MhU"/>
+                            <constraint firstItem="EDM-o9-iLF" firstAttribute="top" secondItem="3ls-Eb-Ylm" secondAttribute="bottom" id="qQn-yW-iHy"/>
+                            <constraint firstAttribute="trailing" secondItem="EDM-o9-iLF" secondAttribute="trailing" id="xqM-7M-B67"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IpP-Q9-MhU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Ryan Mathiu" id="cra-N8-TIN">
                         <barButtonItem key="backBarButtonItem" title="Near Me" id="VLM-jT-1bG"/>
