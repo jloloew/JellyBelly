@@ -21,7 +21,6 @@
 		B8B70CC91B3F1705006093F1 /* JellyBellyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CC81B3F1705006093F1 /* JellyBellyTests.swift */; };
 		B8B70CD71B3F1989006093F1 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CD61B3F1989006093F1 /* Chef.swift */; };
 		B8B70CD91B3F2448006093F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B70CD81B3F2448006093F1 /* MapKit.framework */; };
-		B8B70CDB1B3F2701006093F1 /* ChefCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDA1B3F2701006093F1 /* ChefCellTableViewCell.swift */; };
 		B8B70CDD1B3F2E18006093F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CDC1B3F2E18006093F1 /* DataSource.swift */; };
 		B8B70CE11B3F4698006093F1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70CE01B3F4698006093F1 /* Recipe.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		B8B70CC81B3F1705006093F1 /* JellyBellyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyBellyTests.swift; sourceTree = "<group>"; };
 		B8B70CD61B3F1989006093F1 /* Chef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
 		B8B70CD81B3F2448006093F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B8B70CDA1B3F2701006093F1 /* ChefCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefCellTableViewCell.swift; sourceTree = "<group>"; };
 		B8B70CDC1B3F2E18006093F1 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B8B70CE01B3F4698006093F1 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +123,6 @@
 			children = (
 				B8B70CB01B3F1705006093F1 /* AppDelegate.swift */,
 				B8B70CD61B3F1989006093F1 /* Chef.swift */,
-				B8B70CDA1B3F2701006093F1 /* ChefCellTableViewCell.swift */,
 				B8B70CDC1B3F2E18006093F1 /* DataSource.swift */,
 				B8B70CB41B3F1705006093F1 /* DetailViewController.swift */,
 				B85844FF1B3F91C300300A89 /* JLUtils.swift */,
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B70CDD1B3F2E18006093F1 /* DataSource.swift in Sources */,
-				B8B70CDB1B3F2701006093F1 /* ChefCellTableViewCell.swift in Sources */,
 				B8B70CB51B3F1705006093F1 /* DetailViewController.swift in Sources */,
 				B8B70CB31B3F1705006093F1 /* MasterViewController.swift in Sources */,
 				B85845001B3F91C300300A89 /* JLUtils.swift in Sources */,

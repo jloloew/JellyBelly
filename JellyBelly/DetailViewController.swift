@@ -12,7 +12,6 @@ class DetailViewController: UIViewController {
 	
 	@IBOutlet weak var scrollView: UIScrollView!
 	
-//	@IBOutlet weak var backgroundImageView: UIImageView!
 	@IBOutlet weak var profileImageView: UIImageView!
 	@IBOutlet weak var descriptionTextView: UITextView!
 	@IBOutlet weak var name: UILabel!
@@ -73,11 +72,9 @@ class DetailViewController: UIViewController {
 	/// Update the UI.
 	func configureView() {
 		if let chef = self.chef {
-//			backgroundImageView?.image = chef.backgroundImage
 			profileImageView?.image = chef.profileImage
 			descriptionTextView?.editable = true
 			descriptionTextView?.text = chef.bio
-//			descriptionTextView?.font = UIFont.systemFontOfSize(22.0)// descriptionTextView.font.fontWithSize(30.0)
 			descriptionTextView?.editable = false
 			percentageRating = chef.rating
 		}
